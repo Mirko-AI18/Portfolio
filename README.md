@@ -3,8 +3,8 @@
 Trabajo final de Diseño UX-UI 2026, Licenciatura en Sistemas de Información (FCyT, Sede Concepción del Uruguay). Es un portfolio personal de una sola página, con un caso de estudio propio.
 
 ## Enlaces
-- **Sitio publicado:** https://TU-SITIO.netlify.app <!-- TODO: URL real de Netlify -->
-- **Figma (research, wireframes, design system y prototipo):** TODO
+- **Sitio publicado:** https://portfoliomirkohuck.netlify.app/
+- **Figma (https://www.figma.com/design/kHqoJUB97F30tn6bd36OZZ/Trabajo-Final-UX-UI?node-id=0-1&t=sdxaTiGE6B3peuRV-1):**
 - **Repositorio:** https://github.com/Mirko-AI18/portfolio
 
 ## Qué incluye
@@ -28,7 +28,15 @@ Trabajo final de Diseño UX-UI 2026, Licenciatura en Sistemas de Información (F
 5. **Design system.** Paleta con contrastes calculados (mínimo 4.5:1 en texto), escala tipográfica, espaciado en múltiplos de 4 y 8, y componentes: botón en 4 estados, tag, tarjeta de proyecto e ítem de timeline.
 6. **Maquetación.** HTML semántico, un solo `h1`, link "Saltar al contenido", menú móvil con `aria-expanded` y `aria-controls`, foco visible, `prefers-reduced-motion` y metadatos con Open Graph.
 7. **Modo oscuro.** Segunda paleta con los contrastes verificados y botón para alternar.
-8. **Validación.** TODO: test de usabilidad con 3 personas, hallazgos y cambios aplicados.
+
+
+8.8. **Validación.** Test de usabilidad con 3 personas sobre el sitio, con estas tareas: encontrar el email, abrir el caso de estudio y cambiar a modo oscuro.
+
+   | Persona | Tarea que le costó | Hallazgo | Cambio aplicado |
+   |---|---|---|---|
+   | 1 | (completar) | (completar) | (completar) |
+   | 2 | (completar) | (completar) | (completar) |
+   | 3 | (completar) | (completar) | (completar) |
 
 ## Proyectos que muestra
 | Proyecto | Qué es | Mi parte |
@@ -62,7 +70,11 @@ El sitio se publica en Netlify desde este repositorio de GitHub:
 - Las imágenes de los proyectos son capturas de esos trabajos.
 
 ## Uso de IA
-Usé IA (Claude, de Anthropic) como asistente para la revision del código base del sitio (HTML, CSS y modo oscuro) y de los textos.
+Usé IA (Claude, de Anthropic) como asistente para:
+- Generar y revisar el HTML, el CSS y el modo oscuro del sitio, y los textos.
+- Ayudarme con la lógica de estado del flujo de Cubrí.
+
+Cómo lo revisé: probé el sitio en 375, 768 y 1280 px, lo navegué solo con teclado, verifiqué los contrastes y corrí Lighthouse.
 
 ## Capturas
 TODO: capturas del sitio y del reporte de Lighthouse (mobile).
