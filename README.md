@@ -77,4 +77,4 @@ Usé IA (Claude, de Anthropic) como asistente para:
 Cómo lo revisé: probé el sitio en 375, 768 y 1280 px, lo navegué solo con teclado, verifiqué los contrastes y corrí Lighthouse.
 
 ## Capturas
-TODO: capturas del sitio y del reporte de Lighthouse (mobile).
+
