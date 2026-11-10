@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cubrí Seguros, caso de estudio | Mirko Huck</title>
+  <meta name="description" content="Caso de estudio: cómo pasé al código un flujo mobile de contratación de seguros diseñado en Figma, con validaciones y estados de error.">
+  <meta property="og:title" content="Cubrí Seguros, caso de estudio | Mirko Huck">
+  <meta property="og:description" content="De Figma a un flujo funcional de 4 pasos con HTML, CSS y JavaScript.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://TU-NOMBRE-REAL.netlify.app/images/cubri.webp">
+  <meta name="theme-color" content="#F4F4F5">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F766E'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3EMH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="Mirko Huck, volver al inicio">MH</a>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="index.html#projects" aria-label="Volver a proyectos">Volver</a>
+        <button class="theme-toggle" aria-pressed="false">Modo oscuro</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section>
+      <div class="container case">
+        <p class="muted">Proyecto de la materia Diseño UX-UI, 2026. Individual.</p>
+        <h1>Cubrí Seguros: de Figma a un flujo funcional</h1>
+        <p class="lead muted">Un flujo mobile de 4 pasos para contratar un seguro de celular, con validaciones, error de pago y confirmación.</p>
+        <p><a class="btn btn-primary" href="https://cubri.netlify.app/" target="_blank" rel="noopener noreferrer">Ver el sitio publicado</a></p>
+        <img src="images/cubri.webp" alt="Pantalla de inicio de Cubrí con el título Protegé lo que más usás en menos de 3 minutos y las opciones de seguro" width="800" height="500">
+        <p class="muted">Pantalla de inicio de Cubrí en vista de escritorio, con el sitio publicado.</p>
+
+        <h2>Qué pedía el trabajo</h2>
+        <p>La cátedra pidió un flujo mobile para contratar un seguro de celular en 4 pasos: cotizar, elegir plan, cargar los datos y pagar. Más una pantalla de éxito y otra de error. Nos entregaron el diseño en Figma, con los colores y los componentes.</p>
+
+        <h2>Cómo lo hice</h2>
+        <p>Primero revisé lo que pedía el diseño: pantallas, colores y componentes. Armé las piezas que se repiten, como los botones, los campos y el indicador de pasos, y después cada pantalla. En JavaScript separé el código en archivos: estado, validaciones, cotizador, pago, póliza y render.</p>
+
+        <h2>Lo que más me costó</h2>
+        <p>El manejo del estado: lograr que cada pantalla mostrara lo correcto al avanzar y al volver. Para esta parte me ayudé con IA.</p>
+        <p>La solución fue guardar todo el flujo en un solo objeto, <code>solicitud</code>, con el paso actual, los datos del equipo, el plan, los datos de la persona y el pago. Cada vez que algo cambia, la pantalla se vuelve a dibujar a partir de ese objeto, así que lo que se ve coincide siempre con lo que se cargó. También guardo en qué campos ya estuvo la persona, y solo ahí muestro los errores.</p>
+
+        <h2>Cambios al diseño</h2>
+        <p>Ninguno. Seguí el diseño tal cual: en clase nos explicaron que quien programa no cambia el diseño por gusto propio.</p>
+
+        <h2>Resultado</h2>
+        <p>El flujo funciona de punta a punta con datos simulados. El pago también es simulado y termina en éxito, con el número de póliza, o en error, donde se puede reintentar.</p>
+
+        <h2>Qué mejoraría</h2>
+        <p>Agregaría una opción para revisar el estado del equipo antes de asegurarlo, para comprobar que está en condiciones y evitar que alguien contrate el seguro por un equipo que ya tiene un daño.</p>
+
+        <h2>Lo que aprendí</h2>
+        <p>Que conviene tener una única fuente de datos y que la pantalla solo la refleje. Y que respetar el diseño también es parte del trabajo.</p>
+        <ul class="tags"><li>Figma</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Netlify</li></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Mirko Huck. Hecho con HTML y CSS, tipografías Space Grotesk e Inter, alojado en Netlify.</p>
+      <ul>
+        <li><a href="index.html#contact">Contacto</a></li>
+        <li><a href="https://github.com/Mirko-AI18" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
