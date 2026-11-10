@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mirko Huck | Diseño UX/UI y desarrollo front-end</title>
+  <meta name="description" content="Portfolio de Mirko Huck, estudiante de Sistemas en Concepción del Uruguay. Diseño en Figma y desarrollo front-end con HTML, CSS y JavaScript.">
+  <meta property="og:title" content="Mirko Huck | Diseño UX/UI y desarrollo front-end">
+  <meta property="og:description" content="Diseño y desarrollo páginas web. Mirá mis proyectos y mi caso de estudio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://TU-NOMBRE-REAL.netlify.app/images/foto.webp">
+  <meta property="og:url" content="https://TU-NOMBRE-REAL.netlify.app/">
+  <meta name="theme-color" content="#F4F4F5">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F766E'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3EMH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#inicio" aria-label="Mirko Huck, ir al inicio">MH</a>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="https://github.com/Mirko-AI18" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a class="btn btn-primary" href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-pressed="false">Modo oscuro</button>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="inicio">
+      <div class="container">
+        <p class="badge">Disponible para pasantías y puestos de trainee</p>
+        <h1>Mirko Huck</h1>
+        <p class="role">Diseño UX/UI y desarrollo front-end</p>
+        <p class="lead">Diseño y programo páginas web a partir de lo que necesita el cliente, y de ser necesario, también aporto ideas.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">Ver trabajos</a>
+          <a class="btn btn-secondary" href="#contact">Contacto</a>
+        </div>
+        <p class="location">Concepción del Uruguay, Entre Ríos, Argentina (GMT-3)</p>
+      </div>
+    </section>
+
+    <section class="alt" aria-label="Datos destacados">
+      <div class="container">
+        <ul class="metrics">
+          <li><strong>2.º</strong>año de la Licenciatura en Sistemas</li>
+          <li><strong>3</strong>proyectos de la materia Diseño UX-UI</li>
+          <li><strong>7</strong>herramientas que uso</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <div class="grid grid-3">
+          <article class="card project">
+            <img src="images/cubri.webp" alt="Pantalla de inicio de Cubrí con el título Protegé lo que más usás en menos de 3 minutos y las opciones de seguro" width="800" height="500" loading="lazy">
+            <div class="body">
+              <p class="year">2026</p>
+              <h3>Cubrí Seguros</h3>
+              <p>Flujo mobile de 4 pasos para contratar un seguro de celular: cotizar, elegir plan, cargar datos y pagar.</p>
+              <p class="result">Aprendizaje: manejar todo el flujo desde un solo objeto de estado y mostrar los errores solo cuando la persona sale del campo.</p>
+              <ul class="tags"><li>Figma</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <a class="link" href="caso-cubri.html">Leer el caso de estudio</a>
+            </div>
+          </article>
+          <article class="card project">
+            <img src="images/openart.webp" alt="Pantallas de la app OpenArt: login, inicio, búsqueda y filtros" width="800" height="500" loading="lazy">
+            <div class="body">
+              <p class="year">2026</p>
+              <h3>OpenArt</h3>
+              <p>App para comprar arte, con 14 pantallas y dos flujos: explorar y comprar. Fue un trabajo grupal; trabaje mayormente en los flujos de usuario y el login y registro.</p>
+              <p class="result">Aprendizaje: trabajar en grupo me enseñó a escuchar al compañero y quedarme con la mejor decisión, aunque no sea la mía.</p>
+              <ul class="tags"><li>Figma</li><li>Flujos de usuario</li><li>Mobile</li></ul>
+              <a class="link" href="https://www.figma.com/design/ICCTOtfSgRfS7etLTUQbFG/prorotipardonft?node-id=0-1&amp;t=P1Rv1XJ8B97Lwtk8-1" target="_blank" rel="noopener noreferrer">Ver el diseño en Figma</a>
+            </div>
+          </article>
+          <article class="card project">
+            <img src="images/coffea.webp" alt="Página de inicio de Coffea, una cafetería, con una taza de café y granos" width="800" height="500" loading="lazy">
+            <div class="body">
+              <p class="year">2026</p>
+              <h3>Coffea</h3>
+              <p>Sitio web estático para una cafetería, con menú de cafés y postres, reseñas y suscripción. Lo maqueté a partir de un modelo en Figma.</p>
+              <p class="result">Aprendizaje: HTML ordenado y, sobre todo, CSS. También a trabajar con imágenes prolijas y de buena calidad.</p>
+              <ul class="tags"><li>Figma</li><li>HTML</li><li>CSS</li><li>Netlify</li></ul>
+              <a class="link" href="https://curious-torrone-17f71f.netlify.app/" target="_blank" rel="noopener noreferrer">Ver el sitio publicado</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Diseño UX/UI</h3>
+            <p>Modelo y diseño las páginas en Figma, y armo flujos de usuario: los pasos que sigue una persona mientras navega.</p>
+            <ul class="tags"><li>Figma</li><li>Flujos de usuario</li><li>Prototipado</li></ul>
+          </article>
+          <article class="card">
+            <h3>Front-end</h3>
+            <p>Con HTML armo la estructura y el orden de la página, con CSS el estilo, y con JavaScript le doy la funcionalidad.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+          <article class="card">
+            <h3>Herramientas</h3>
+            <p>GitHub para tener mis repositorios ordenados por materia y proyecto, Netlify para publicarlos en una URL pública, y Python para resolver problemas de lógica en la facultad.</p>
+            <ul class="tags"><li>GitHub</li><li>Netlify</li><li>Python</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2>Experiencia y formación</h2>
+        <ol class="timeline">
+          <li>
+            <p class="period">2025 a la actualidad</p>
+            <h3>Estudiante de Sistemas de Información</h3>
+            <p class="muted">FCyT, Sede Concepción del Uruguay</p>
+            <ul>
+              <li>Cursando el segundo año de la carrera.</li>
+              <li>Estudio programación, algoritmos y diseño de interfaces.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="period">2026</p>
+            <h3>Estudiante, materia Diseño UX-UI</h3>
+            <p class="muted">FCyT, Sede Concepción del Uruguay</p>
+            <ul>
+              <li>Con mi grupo diseñé OpenArt en Figma; trabaje mayormente en los flujos de usuario y el login y registro.</li>
+              <li>Implementé Cubrí y Coffea con HTML, CSS y JavaScript y los publiqué en Netlify.</li>
+            </ul>
+          </li>
+          <li>
+            <p class="period">2026</p>
+            <h3>Estudiante, materia Algoritmos y estructura de datos</h3>
+            <p class="muted">FCyT, Sede Concepción del Uruguay</p>
+            <ul>
+              <li>Trabajo en Python con recursividad, árboles binarios, grafos, pilas, colas y listas.</li>
+              <li>Uso esas técnicas para resolver problemas lógicos llevados a situaciones de la vida real.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="alt" id="about">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <div class="about">
+          <img src="images/foto.webp" alt="Retrato de Mirko Huck con remera azul oscura" width="480" height="480" loading="lazy">
+          <div>
+            <p>Elegí Sistemas porque me gusta el desarrollo de software: es versátil y se pueden crear muchísimas cosas.</p>
+            <p>De las dos partes, prefiero diseñar las pantallas. Me gusta pensar cómo hacerlas más fáciles de usar y que tengan buen impacto en los clientes. Soy meticuloso: me importa lo que piensa el usuario y que todo quede ordenado, práctico y sin vueltas.</p>
+            <p>Busco una pasantía o un puesto de trainee en desarrollo web, donde pueda usar HTML, CSS y JavaScript.</p>
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <article class="card"><h3>Arranco por los requerimientos</h3><p>Analizo lo que pide el cliente, las condiciones y los estilos, para acercarme lo más posible a lo que espera.</p></article>
+          <article class="card"><h3>Reviso antes de entregar</h3><p>Controlo formatos, colores, redacción y errores, tanto de código como de ortografía.</p></article>
+          <article class="card"><h3>Investigo el porqué</h3><p>Si algo falla, busco la causa en páginas de consulta o uso la IA como herramienta para detectarla y resolverla.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Escribime</h2>
+          <p>Si tu empresa o proyecto busca un trainee o un junior para diseño y desarrollo web, escribime. Me gusta el diseño UX/UI y aprendo rápido. Estoy abierto a proyectos puntuales o a un puesto fijo, y si me falta algún conocimiento, lo investigo o me capacito hasta llegar al resultado.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:huckmirko05@gmail.com">huckmirko05@gmail.com</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/mirko-huck-ab193836a" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/Mirko-AI18" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p>© 2026 Mirko Huck. Hecho con HTML y CSS, tipografías Space Grotesk e Inter, alojado en Netlify.</p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/mirko-huck-ab193836a" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/Mirko-AI18" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="mailto:huckmirko05@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <nav aria-label="Pie de página">
+        <ul>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu');
+    function setMenu(open) {
+      menu.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    }
+    toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+    menu.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { setMenu(false); toggle.focus(); } });
+  </script>
+</body>
+</html>
